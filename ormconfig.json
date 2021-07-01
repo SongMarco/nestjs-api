@@ -1,0 +1,19 @@
+{
+  "type": "mariadb",
+  "host": "localhost",
+  "port": 3310,
+  "username": "root",
+  "password": "futureskill",
+  "database": "side-db",
+  "logging": [
+    "error"
+  ],
+  "extra": {
+    "connectionLimit": 5
+  },
+  "entities": [
+    "dist/**/*.entity{.ts,.js}",
+    "dist/users/entities/*.entity{.ts,.js}"
+  ],
+  "synchronize": true
+}
